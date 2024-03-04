@@ -1,0 +1,47 @@
+{
+    "resourceType": "Practitioner",
+    "id": "pract001",
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "text": "Carolina Fernández García",
+            "given": ["Carolina", "Carol"],
+            "prefix": ["Dra"]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "email",
+            "value": "carfergar@sas.es"
+        }
+    ],
+    "gender": "female",
+    "address": [
+        {
+            "use": "work",
+            "line": ["Avenida de Reina Mercedes","30"],
+            "city": "Sevilla",
+            "country": "España",
+            "postalCode": "41012"
+        }
+    ],
+    "qualification": [
+        {
+            "identifier": ["Médico de cabecera"],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0360/2.7",
+                        "code": "BS",
+                        "display": "Bachelor of Science"
+                    }
+                ]
+            },
+            "text": "Grado en Medicina",
+            "issuer": {
+                "display": "Universidad de Sevilla"
+            }
+        }
+    ]
+}

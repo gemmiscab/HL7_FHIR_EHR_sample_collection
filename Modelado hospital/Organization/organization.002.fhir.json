@@ -1,0 +1,85 @@
+{
+    "resourceType": "Organization",
+    "id": "org002",
+    "identifier": [
+      {
+        "system": "https://sspa.juntadeandalucia.es/servicioandaluzdesalud/organizaciones/huvm",
+        "value": "HUVM"
+      }
+    ],
+    "active": true,
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+            "code": "prov",
+            "display": "Healthcare Provider"
+          }
+        ]
+      }
+    ],
+    "name": "Hospital Universitario Virgen Macarena",
+    "alias": ["Virgen Macarena", "Macarena","HUVM"],
+    "description": "El Hospital Universitario Virgen Macarena es un hospital público de alta complejidad, perteneciente al Servicio Andaluz de Salud, ubicado en Sevilla, España.",
+    "contact": [
+      {
+        "name": {
+          "text": "Hospital Universitario Virgen Macarena - Atención al Usuario"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+34 954 506 000"
+          },
+          {
+            "system": "email",
+            "value": "atencion.usuario.huvm@juntadeandalucia.es"
+          }
+        ]
+      }
+    ],
+    "address": [
+      {
+        "line": ["Avda. Doctor Fedriani, 3"],
+        "city": "Sevilla",
+        "postalCode": "41009",
+        "country": "ES"
+      }
+    ],
+    "partOf": {
+      "reference": "Organization/org-sspa"
+    },
+    "endpoint": [
+      {
+        "reference": "Endpoint/ep-huvm-citaprevia"
+      }
+    ],
+    "qualification": [
+      {
+        "identifier": [
+          {
+            "system": "https://snomed.info/sct",
+            "value": "411163000"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "411163000",
+              "display": "Hospital accreditation"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-01-01",
+          "end": null
+        },
+        "issuer": {
+          "reference": "Organization/org-msssi"
+        }
+      }
+    ]
+  }
+  
