@@ -1,0 +1,1 @@
+En los recursos de Organization, el atributo "qualification" queda pendiente de completar a falta de encontrar un estándar de certificación de hospitales.
