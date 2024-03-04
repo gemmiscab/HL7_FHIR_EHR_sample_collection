@@ -28,7 +28,14 @@
     ],
     "qualification": [
         {
-            "identifier": ["Médico de cabecera"],
+            "identifier": [
+                {
+                    "use" : "usual",
+                    "type" : {  
+                        "text": "Médico de Familia"
+                        }
+                }
+            ],
             "code": {
                 "coding": [
                     {
@@ -36,9 +43,9 @@
                         "code": "BS",
                         "display": "Bachelor of Science"
                     }
-                ]
+                ],
+                "text": "Grado en Medicina"
             },
-            "text": "Grado en Medicina",
             "issuer": {
                 "display": "Universidad de Sevilla"
             }

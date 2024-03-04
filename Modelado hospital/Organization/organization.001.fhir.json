@@ -6,7 +6,7 @@
         {
             "coding": [
                 {
-                    "system": " http://hl7.org/fhir/ValueSet/organization-type", 
+                    "system": "http://hl7.org/fhir/ValueSet/organization-type", 
                     "code": "prov",
                     "display": "Healthcare Provider"
                 }
@@ -18,9 +18,11 @@
     "description": "El Hospital Universitario Virgen del Rocío es un hospital público de alta complejidad, perteneciente al Servicio Andaluz de Salud, ubicado en Sevilla, España.",
     "contact": [
         {
-            "name": {
-                "text": "Hospital Universitario Virgen del Rocío - Atención al Usuario"
-              },
+            "name": [
+                {
+                    "text": "Hospital Universitario Virgen del Rocío - Atención al Usuario"
+                }
+            ],
             "telecom": [
                 {
                     "system": "phone",

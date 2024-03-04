@@ -24,9 +24,11 @@
     "description": "El Hospital Universitario Virgen Macarena es un hospital público de alta complejidad, perteneciente al Servicio Andaluz de Salud, ubicado en Sevilla, España.",
     "contact": [
       {
-        "name": {
+        "name": [
+          {
           "text": "Hospital Universitario Virgen Macarena - Atención al Usuario"
-        },
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -36,15 +38,13 @@
             "system": "email",
             "value": "atencion.usuario.huvm@juntadeandalucia.es"
           }
-        ]
-      }
-    ],
-    "address": [
-      {
-        "line": ["Avda. Doctor Fedriani, 3"],
-        "city": "Sevilla",
-        "postalCode": "41009",
-        "country": "ES"
+        ],
+        "address": {
+            "line": ["Avda. Doctor Fedriani, 3"],
+            "city": "Sevilla",
+            "postalCode": "41009",
+            "country": "ES"
+          }
       }
     ],
     "partOf": {
@@ -71,10 +71,6 @@
               "display": "Hospital accreditation"
             }
           ]
-        },
-        "period": {
-          "start": "2020-01-01",
-          "end": null
         },
         "issuer": {
           "reference": "Organization/org-msssi"
