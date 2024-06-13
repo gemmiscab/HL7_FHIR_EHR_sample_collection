@@ -1,0 +1,100 @@
+{
+    "resourceType": "Immunization",
+    "id": "immunization.003",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.003"
+        },
+        {
+            "reference": "Immunization Recommendation/immunizationrecommendation.001"
+        }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "162",
+                "display": "meningococcal B vaccine, fully recombinant"
+            }
+        ],
+        "text": "meningococcal B, recombinant"
+    },
+    "patient": {
+        "reference": "Patient/patient.004"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.006"
+    },
+    "location": {
+        "reference": "Location/location.001"
+    },
+    "site": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/immunization-site",
+                "code": "RA",
+                "display": "Right arm"
+            }
+        ],
+        "text": "Brazo derecho"
+    },
+    "route": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/immunization-route",
+                "code": "IM",
+                "display": "Injection,Intramuscular"
+            }
+        ],
+        "text": "Intramuscular"
+    },
+    "doseQuantity": {
+        "value": 0.5,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/immunization-function",
+                        "code": "AP",
+                        "display": "Administering provider"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "Practitioner/practitioner.009"
+            }
+        }
+    ],
+    "note": [
+        {
+            "text": "Vacuna administrada en el departamento de pediatría."
+        }
+    ],
+    "protocolApplied": [
+        {
+            "series": "1",
+            "authority": {
+                "reference": "Organization/organization.001"
+            },
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "23511006",
+                            "display": "Meningococcal infectious disease"
+                        }
+                    ]
+                }
+            ],
+            "doseNumber": "1",
+            "seriesDoses": "3"
+        }
+    ]
+}

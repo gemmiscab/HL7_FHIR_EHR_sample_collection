@@ -1,0 +1,101 @@
+{
+    "resourceType": "Patient",
+    "id": "patient.001",
+    "active": true,
+    "name":[
+        {
+            "use": "official",
+            "text": "Prentice Giovanitti Everiss",
+            "given": ["Prentice", "Giovanitti", "Everiss", "Prentice Giovanitti Everiss"],
+            "family": "Giovanitti Everiss"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+34 954 123 456"
+        },
+        {
+            "system": "email",
+            "value": "peveriss0@boston.com"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1990-01-01",
+    "deceasedBoolean": false,
+    "address":[
+        {
+            "use": "home",
+            "line": ["Avenida Luis de Morales", "15"],
+            "city": "Sevilla",
+            "country": "España",
+            "postalCode": "41007"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "Married"
+            }
+        ],
+        "text": "Casado"
+    },
+    "contact":[
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                            "code": "N",
+                            "display": "Next-of-Kin"
+                        }
+                    ],
+                    "text": "Cónyuge"
+                }
+            ],
+            "name": {
+                "use": "official",
+                "text": "Lorilyn Giovanitti Everiss",
+                "given": ["Lorilyn", "Giovanitti", "Everiss", "Lorilyn Giovanitti Everiss"],
+                "family": "Giovanitti Everiss"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "+34 954 123 456"
+                }
+            ],
+            "gender": "female"
+        }
+    ],
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/language",
+                        "code": "es",
+                        "display": "Español"
+                    }
+                ]
+            }
+        }
+    ],
+    "generalPractitioner": [
+        {
+            "reference": "Practitioner/practioner.001",
+            "display": "Carolina Fernández García"
+        },
+        {
+            "reference": "Organization/organization.001",
+            "display": "Hospital Universitario Virgen del Rocío"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/organization.001",
+        "display": "Hospital Universitario Virgen del Rocío"
+    }
+}

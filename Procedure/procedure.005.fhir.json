@@ -1,0 +1,81 @@
+{
+    "resourceType": "Procedure",
+    "id": "procedure.005",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.005"
+        }
+    ],
+    "partOf": [
+        {
+            "reference": "Encounter/encounter.007"
+        }
+    ],
+    "status": "completed",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "103693007",
+                    "display": "Diagnostic procedure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "396550006",
+                "display": "Blood test"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.005"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.007"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/performer-role",
+                        "code": "224535009",
+                        "display": "Registered nurse"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "Practitioner/practitioner.009"
+            }
+        }
+    ],
+    "location": {
+        "reference": "Location/location.001"
+    },
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "82271004",
+                        "display": "Head injury"
+                    }
+                ]
+            },
+            "reference": {
+                "reference": "Condition/condition.003"
+            }
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente presenta valores normales en el análisis de sangre."
+        }
+    ]
+}

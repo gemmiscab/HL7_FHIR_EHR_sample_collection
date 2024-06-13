@@ -1,0 +1,90 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "healthcareservice.004",
+    "active": true,
+    "providedBy": {
+        "reference": "Organization/organization.005"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                    "code": "31",
+                    "display": "Specialist Surgical"
+                }
+            ],
+            "text": "Cirugía especializada"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                        "code": "216",
+                        "display": "Neurosurgery"
+                }
+            ],
+            "text": "Neurocirugía"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "394610002",
+                    "display": "Surgery-Neurosurgery"
+                }
+            ],
+            "text": "Cirugía-Neurocirugía"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/location.001"
+        }
+    ],
+    "name": "Neurocirugía",
+    "comment": "Cirugía especializada en el sistema nervioso",
+    "coverageArea": [
+        {
+            "reference": "Location/location.001"
+        }
+    ],
+    "characteristic": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/service-mode",
+                    "code": "in-person",
+                    "display": "In Person"
+                }
+            ],
+            "text": "Atención presencial"
+        }
+    ],
+    "communication": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/languages",
+                    "code": "es",
+                    "display": "Español"
+                }
+            ]
+        }
+    ],
+    "appointmentRequired": true,
+    "availability": [
+        { 
+            "availableTime": [
+                {
+                    "daysOfWeek": ["mon | tue | wed | thu | fri | sat | sun"],
+                    "allDay": true
+                }
+            ]
+          }
+    ]
+}

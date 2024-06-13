@@ -1,0 +1,113 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "servicerequest.003",
+    "status": "completed",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info.ct",
+                    "code": "33879002",
+                    "display": "Immunization"
+                }
+            ]
+        }
+    ],
+    "priority": "routine",
+    "orderDetail": [
+        {
+            "parameter": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/cvx",
+                                "code": "162",
+                                "display": "meningococcal B vaccine, fully recombinant"
+                            }
+                        ]
+                    },
+                    "valueString": "meningococcal B, recombinant"
+                }
+            ]
+        },
+        {
+            "parameter": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/cvx",
+                                "code": "33",
+                                "display": "pneumococcal polysaccharide vaccine, 23 valent"
+                            }
+                        ]
+                    },
+                    "valueString": "pneumococcal polysaccharide PPV23"
+                }
+            ]
+        },
+        {
+            "parameter": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/sid/cvx",
+                                "code": "146",
+                                "display": "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Protein Conjugate), and Hepatitis B (Recombinant) Vaccine."
+                            }
+                        ]
+                    },
+                    "valueString": "DTaP,IPV,Hib,HepB"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient.004"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.006"
+    },
+    "requester": {
+        "reference": "Practitioner/practitioner.008"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "224562001",
+                "display": "Pediatric nurse"
+            }
+        ],
+        "text": "Enfermero pediátrica"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.009"
+        }
+    ],
+    "location": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "309945009",
+                        "display": "Pediatric department"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "Location/location.001"
+            }
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente debe ser vacunado siguiendo el calendario de vacunación de la comunidad de Andalucía."
+        }
+    ]
+}

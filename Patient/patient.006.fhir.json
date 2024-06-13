@@ -1,0 +1,33 @@
+{
+    "resourceType": "Patient",
+    "id": "patient.006",
+    "active": true,
+    "name":[
+        {
+            "use": "official",
+            "text": "Antonio Portillo López",
+            "given": ["Antonio", "Ánton"],
+            "family": "Portillo López"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+34 954 123 456"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1932-01-23",
+    "deceasedBoolean": true,
+    "deceasedDateTime": "2021-06-17",
+    "generalPractitioner": [
+        {
+            "reference": "Practitioner/practitioner.003",
+            "display": "Juan Antonio López García"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/organization.003",
+        "display": "Hospital Universitario Virgen María"
+    }
+}

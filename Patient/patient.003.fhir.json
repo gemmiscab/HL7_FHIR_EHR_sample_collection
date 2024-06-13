@@ -1,0 +1,90 @@
+{
+    "resourceType": "Patient",
+    "id": "patient.003",
+    "active": true,
+    "name":[
+        {
+            "use": "official",
+            "text": "Victoria Gómez Portillo",
+            "given": ["Victoria", "Vicky"],
+            "family": "Gómez Portillo"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+34 954 123 456"
+        }
+    ],
+    "gender": "female",
+    "birthDate": "2022-02-14",
+    "deceasedBoolean": false,
+    "address":[
+        {
+            "use": "home",
+            "line": ["Calle de la Esperanza", "7"],
+            "city": "Sevilla",
+            "country": "España",
+            "postalCode": "41002"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+            }
+        ],
+        "text": "Soltero/a"
+    },
+    "contact":[
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                            "code": "N",
+                            "display": "Next-of-Kin"
+                        }
+                    ],
+                    "text": "Madre"
+                }
+            ],
+            "name": {
+                "use": "official",
+                "text": "María Portillo"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "+34 954 123 456"
+                }
+            ]
+        }
+    ],
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/language",
+                        "code": "es",
+                        "display": "Español"
+                    }
+                ]
+            }
+        }
+    ],
+    "generalPractitioner": [
+        {
+            "reference": "Practitioner/practitioner.008",
+            "display": "Dra. Ángeles Calvo Gómez"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/organization.001",
+        "display": "Hospital Universitario Virgen del Rocío"
+    }
+}

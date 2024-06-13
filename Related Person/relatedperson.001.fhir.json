@@ -1,0 +1,57 @@
+{
+    "resourceType": "RelatedPerson",
+    "id": "relatedperson.001",
+    "active": true,
+    "patient": {
+        "reference": "Patient/patient.004"
+    },
+    "relationship": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+                    "code": "NOK",
+                    "display": "next of kin"
+                }
+            ]
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "text": "María Portillo",
+            "given": ["María"],
+            "family": "Portillo"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+34 954 123 456"
+        }
+    ],
+    "gender": "female",
+    "address": [
+        {
+            "use": "home",
+            "line": ["Calle de la Esperanza", "7"],
+            "city": "Sevilla",
+            "country": "España",
+            "postalCode": "41002"
+        }
+    ],
+    "communication": [
+        {
+          "language": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/languages",
+                "code": "es",
+                "display": "Español"
+              }
+            ]
+          },
+            "preferred": true
+        }
+    ]
+}

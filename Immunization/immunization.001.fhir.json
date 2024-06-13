@@ -1,0 +1,146 @@
+{
+    "resourceType": "Immunization",
+    "id": "immunization.001",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.003"
+        },
+        {
+            "reference": "Immunization Recommendation/immunizationrecommendation.001"
+        }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "146",
+                "display": "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Protein Conjugate), and Hepatitis B (Recombinant) Vaccine."
+            }
+        ],
+        "text": "DTaP,IPV,Hib,HepB"
+    },
+    "patient": {
+        "reference": "Patient/patient.004"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.006"
+    },
+    "location": {
+        "reference": "Location/location.001"
+    },
+    "site": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/immunization-site",
+                "code": "LA",
+                "display": "Left arm"
+            }
+        ],
+        "text": "Brazo izquierdo"
+    },
+    "route": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/immunization-route",
+                "code": "IM",
+                "display": "Injection,Intramuscular"
+            }
+        ],
+        "text": "Intramuscular"
+    },
+    "doseQuantity": {
+        "value": 0.5,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/immunization-function",
+                        "code": "AP",
+                        "display": "Administering provider"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "Practitioner/practitioner.009"
+            }
+        }
+    ],
+    "note": [
+        {
+            "text": "Vacuna administrada en el departamento de pediatría."
+        }
+    ],
+    "protocolApplied": [
+        {
+            "series": "1",
+            "authority": {
+                "reference": "Organization/organization.001"
+            },
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "398102009",
+                            "display": "Poliomyelitis"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "76902006",
+                            "display": "Tetanus"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "14189004",
+                            "display": "Pertussis"
+                        }
+                    ],
+                    "text": "Tos ferina"
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "397430003",
+                            "display": "Diphtheria"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "11156007",
+                            "display": "Haemophilus influenzae type b"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "66071002",
+                            "display": "Hepatitis B"
+                        }
+                    ]
+                }
+            ],
+            "doseNumber": "1",
+            "seriesDoses": "4"
+        }
+    ]
+}

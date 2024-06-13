@@ -1,0 +1,77 @@
+{
+    "resourceType": "Observation",
+    "id": "observation.001",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.001"
+        }
+    ],
+    "partOf": [
+        {
+            "reference": "Procedure/procedure.001"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "94593-1",
+                "display": "Multiplex allergen panel - Serum or Plasma"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.001"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.004"
+        }
+    ],
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "10828004",
+                "display": "Positive"
+            }
+        ]
+    },
+    "interpretation":  [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                    "code": "POS",
+                    "display": "Positive"
+                }
+            ]
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente es alérgico a las picaduras de abeja."
+        }
+    ],
+    "method": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "252515007",
+                "display": "Allergy skin test"
+            }
+        ]
+    }
+}

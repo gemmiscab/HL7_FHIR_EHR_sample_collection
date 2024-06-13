@@ -1,0 +1,92 @@
+{
+    "resourceType": "Encounter",
+    "id": "encounter.008",
+    "status": "completed",
+    "class": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "EMER",
+                    "display": "emergency"
+                }
+            ]
+        }
+    ],
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "code": "S",
+                "display": "stat"
+            }
+        ],
+        "text": "Prioridad urgente"
+    },
+    "serviceType": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                        "code": "216",
+                        "display": "Neurosurgery"
+                    }
+                ],
+                "text": "Neurocirugía"
+            },
+            "reference": {
+                "reference": "Healthcare Service/healthcareservice.004"
+            }
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient.005"
+    },
+    "serviceProvider": {
+        "reference": "Organization/organization.001"
+    },
+    "appointment": [
+        {
+            "reference": "Appointment/appointment.008"
+        }
+    ],
+    "reason": [
+        {
+            "use": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/encounter-reason-use",
+                            "code": "HC",
+                            "display": "Health concern"
+                        }
+                    ]
+                }
+            ],
+            "value": [
+                {
+                    "concept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "82271004",
+                                "display": "Head injury"
+                            }
+                        ]
+                    },
+                    "reference": {
+                        "reference": "Condition/condition.003"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "location": {
+                "reference": "Location/location.001"
+            }
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "resourceType": "Condition",
+    "id": "condition.002",
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "provisional",
+                "display": "Provisional"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "problem-list-item",
+                    "display": "Problem List Item"
+                }
+            ]
+        }
+    ],
+    "severity": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "24484000",
+                "display": "Severe"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "125605004",
+                "display": "Broken bone"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/pat002"
+    },
+    "encounter": {
+        "reference": "Encounter/enc003"
+    },
+    "note": [
+        {
+            "text": "El paciente tiene un hueso roto."
+        }
+    ]
+}

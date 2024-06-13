@@ -1,0 +1,110 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "servicerequest.001",
+    "status": "completed",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/servicerequest-category",
+                    "code": "108252007",
+                    "display": "Laboratory procedure"
+                }
+            ]
+        }
+    ],
+    "priority": "routine",
+    "orderDetail": [
+        {
+            "parameter": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "94593-1",
+                                "display": "Multiplex allergen panel - Serum or Plasma"
+                            }
+                        ]
+                    },
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "10828004",
+                                "display": "Positive"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient.001"
+    },
+    "focus": [
+        {
+            "reference": "AllergyIntolerance/allergyintolerance.001"
+        }
+    ],
+    "encounter": {
+        "reference": "Encounter/encounter.001"
+    },
+    "requester": {
+        "reference": "Practitioner/practitioner.001"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "721943002",
+                "display": "Clinical inmmunology and allergy specialist (occupation)"
+            }
+        ],
+        "text": "Especialista en inmunología clínica y alergia"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.004"
+        }
+    ],
+    "location": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "312608009",
+                        "display": "Clinical laboratory"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "Location/location.001"
+            }
+        }
+    ],
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "424213003",
+                        "display": "Allergy to bee venom"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "AllergyIntolerance/allergyintolerance.001"
+            } 
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente es alérgico a las picaduras de abeja."
+        }
+    ]
+}

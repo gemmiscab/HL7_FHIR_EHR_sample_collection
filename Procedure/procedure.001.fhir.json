@@ -1,0 +1,105 @@
+{
+    "resourceType": "Procedure",
+    "id": "procedure.001",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.001"
+        }
+    ],
+    "partOf": [
+        {
+            "reference": "Encounter/encounter.001"
+        }
+    ],
+    "status": "completed",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "103693007",
+                    "display": "Diagnostic procedure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "252515007",
+                "display": "Allergy skin test"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.001"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.001"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/performer-role",
+                        "code": "721943002",
+                        "display": "Clinical immunologist and allergy specialist (occupation)"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "Practitioner/practitioner.004"
+            }
+        }
+    ],
+    "location": {
+        "reference": "Location/location.001"
+    },
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "247472004",
+                        "display": "Hives"
+                    }
+                ]
+            },
+            "reference": {
+                "reference": "Condition/condition.001"
+            }
+
+        }
+    ],
+    "outcome": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "385669000",
+                "display": "Successful (qualifier value)"
+            }
+        ],
+        "text": "El paciente fue sometido a la prueba de alergia a la piel y se determinó que es alérgico a la picadura de abeja."
+    },
+    "complication": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "271681001",
+                        "display": "Local reaction"
+                    }
+                ]
+            } 
+        }
+    ],
+    "supportingInfo": [
+        {
+            "reference": "Observation/observation.001"
+        }
+    ]
+}

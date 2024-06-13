@@ -1,0 +1,56 @@
+{
+    "resourceType": "Organization",
+    "id": "organization.007",
+    "active": true,   
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/organization-type", 
+                    "code": "dept",
+                    "display": "Hospital Department"
+                }
+            ]
+        }
+    ],
+    "name": "Unidad de Hematología",
+    "alias": ["Hematología"], 
+    "description": "Unidad de Hematología perteneciente al Hospital Universitario Virgen del Rosario ubicado en Sevilla, España.",
+    "contact": [
+        {
+            "name": [
+                {
+                    "text": "Hospital Universitario Virgen del Rosario - Atención al Usuario"
+                }
+            ],
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "955 01 20 00",
+                    "use": "work"
+                },
+                {
+                    "system": "email",
+                    "value": "atencion.usuario.huvr@juntadeandalucia.es"
+                }
+            ],
+                "address": {
+                "text": "Av. Manuel Salgado, S/n, 41013 Sevilla",
+                "line": ["Av. Manuel Salgado, S/n"],
+                "city": "Sevilla",
+                "state": "Andalucía",
+                "postalCode": "41013",
+                "country": "España"
+            }
+        }
+    ],
+    "partOf": {
+        "reference": "Organization/organization.001"
+      },
+    "endpoint": [
+      {
+        "reference": "Endpoint/ep007",
+        "display" : "Unidad de Hematología del Hospital Virgen del Rosario"
+      }
+    ]
+  }  

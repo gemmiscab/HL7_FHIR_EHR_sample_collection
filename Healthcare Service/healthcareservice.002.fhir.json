@@ -1,0 +1,89 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "healthcareservice.002",
+    "active": true,
+    "providedBy": {
+        "reference": "Organization/organization.011"
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                    "code": "29",
+                    "display": "Specialist Paediatric"
+                }
+            ]
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                    "code": "200",
+                    "display": "Paediatric Medicine"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "394537008",
+                    "display": "Pediatric specialty"
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/location.001"
+        }
+    ],
+    "name": "Consulta de niño sano (pediatría)",
+    "comment": "Consulta de niño sano (pediatría)",
+    "coverageArea": [
+        {
+            "reference": "Location/location.001"
+        }
+    ],
+    "characteristic": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/service-mode",
+                    "code": "in-person",
+                    "display": "In Person"
+                }
+            ],
+            "text": "Atención presencial"
+        }
+    ],
+    "communication": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/languages",
+                    "code": "es",
+                    "display": "Español"
+                }
+            ]
+        }
+    ],
+    "appointmentRequired": true,
+    "availability": [
+        { 
+            "availableTime": [
+                {
+                    "daysOfWeek": ["mon | tue | wed | thu | fri"],
+                    "allDay": false,
+                    "availableStartTime": "08:00:00",
+                    "availableEndTime": "21:00:00"
+                }
+            ]
+          }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "resourceType": "Observation",
+    "id": "observation.003",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.002"
+        }
+    ],
+    "partOf": [
+        {
+            "reference": "Procedure/procedure.002"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "imaging",
+                    "display": "Imaging"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "24689-2",
+                "display": "XR Upper extremity Views"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.002"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.010"
+        }
+    ],
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "82334004",
+                "display": "Indeterminate"
+            }
+        ]
+    },
+    "interpretation":  [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                    "code": "IND",
+                    "display": "Indeterminate"
+                }
+            ]
+        }
+    ],
+    "note": [
+        {
+            "text": "La radiografía se ve borrosa."
+        }
+    ],
+    "method": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "363680008",
+                "display": "X-ray"
+            }
+        ]
+    }
+}

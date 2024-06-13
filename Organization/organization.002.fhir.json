@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "org002",
+  "id": "organization.002",
   "identifier": [
     {
       "system": "https://sspa.juntadeandalucia.es/servicioandaluzdesalud/organizaciones/huvm",

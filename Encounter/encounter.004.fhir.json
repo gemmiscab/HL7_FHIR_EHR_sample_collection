@@ -1,0 +1,85 @@
+{
+    "resourceType": "Encounter",
+    "id": "encounter.004",
+    "status": "completed",
+    "class": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/pat002"
+    },
+    "serviceProvider": {
+        "reference": "Organization/org003"
+    },
+    "appointment": [
+        {
+            "reference": "Appointment/appointment.004"
+        }
+    ],
+    "reason": [
+        {
+            "use": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/encounter-reason-use",
+                            "code": "HC",
+                            "display": "health concern"
+                        }
+                    ]
+                }
+            ],
+            "value": [
+                {
+                    "concept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "125605004",
+                                "display": "Broken bone"
+                            }
+                        ]
+                    },
+                    "reference": {
+                        "reference": "Procedure/procedure.002"
+                    }
+                }
+            ]
+        }
+    ],
+    "diagnosis": [
+        {
+            "condition": [
+                {
+                    "concept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "125605004",
+                                "display": "Broken bone"
+                            }
+                        ]
+                    },
+                    "reference": {
+                        "reference": "Condition/cond002"
+                    }
+                }
+            ]
+        }
+    ],
+    "location": [
+        {
+            "location": {
+                "reference": "Location/loc003"
+            }
+        }
+    ]
+}

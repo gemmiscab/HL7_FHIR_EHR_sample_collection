@@ -1,0 +1,217 @@
+{
+    "resourceType": "ImmunizationRecommendation",
+    "id": "immunizationrecommendation.001",
+    "patient": {
+        "reference": "Patient/patient.004"
+    },
+    "authority": {
+        "reference": "Organization/organization.001"
+    },
+    "recommendation": [
+        {
+            "vaccineCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/cvx",
+                            "code": "146",
+                            "display": "Diphtheria and Tetanus Toxoids and Acellular Pertussis Adsorbed, Inactivated Poliovirus, Haemophilus b Conjugate (Meningococcal Protein Conjugate), and Hepatitis B (Recombinant) Vaccine."
+                        }
+                    ],
+                    "text": "DTaP,IPV,Hib,HepB"
+                }
+            ],
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "398102009",
+                            "display": "Poliomyelitis"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "76902006",
+                            "display": "Tetanus"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "14189004",
+                            "display": "Pertussis"
+                        }
+                    ],
+                    "text": "Tos ferina"
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "397430003",
+                            "display": "Diphtheria"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "11156007",
+                            "display": "Haemophilus influenzae type b"
+                        }
+                    ]
+                },
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "66071002",
+                            "display": "Hepatitis B"
+                        }
+                    ]
+                }
+            ],
+            "forecastStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                        "code": "due",
+                        "display": "Due"
+                    }
+                ]
+            },
+            "dateCriterion": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "30980-7",
+                                "display": "Date vaccine due"
+                            }
+                        ],
+                        "text": "Date vaccine due"
+                    },
+                    "value": "2024-08-01"
+                }
+            ],
+            "description": "Debe vacunar a su hijo con la vacuna DTaP,IPV,Hib,HepB.",
+            "series": "DTaP-IPV-Hib-HepB",
+            "doseNumber": "1",
+            "seriesDoses": "4"
+        },
+        {
+            "vaccineCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/cvx",
+                            "code": "33",
+                            "display": "pneumococcal polysaccharide vaccine, 23 valent"
+                        }
+                    ],
+                    "text": "pneumococcal polysaccharide PPV23"
+                }
+            ],
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "16814004",
+                            "display": "Pneumococcal infectious disease"
+                        }
+                    ]
+                }
+            ],
+            "forecastStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                        "code": "due",
+                        "display": "Due"
+                    }
+                ]
+            },
+            "dateCriterion": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "30980-7",
+                                "display": "Date vaccine due"
+                            }
+                        ],
+                        "text": "Date vaccine due"
+                    },
+                    "value": "2024-08-01"
+                }
+            ],
+            "description": "Debe vacunar a su hijo con la vacuna neumocócica conjugada.",
+            "series": "PPV23",
+            "doseNumber": "1",
+            "seriesDoses": "4"
+        },
+        {
+            "vaccineCode": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/cvx",
+                            "code": "162",
+                            "display": "meningococcal B vaccine, fully recombinant"
+                        }
+                    ],
+                    "text": "meningococcal B, recombinant"
+                }
+            ],
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "23511006",
+                            "display": "Meningococcal infectious disease"
+                        }
+                    ]
+                }
+            ],
+            "forecastStatus": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                        "code": "due",
+                        "display": "Due"
+                    }
+                ]
+            },
+            "dateCriterion": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "30980-7",
+                                "display": "Date vaccine due"
+                            }
+                        ],
+                        "text": "Date vaccine due"
+                    },
+                    "value": "2024-08-01"
+                }
+            ],
+            "description": "Debe vacunar a su hijo con la vacuna contra el meningococo B.",
+            "series": "Meningococo B",
+            "doseNumber": "1",
+            "seriesDoses": "3"
+        }
+    ]
+}

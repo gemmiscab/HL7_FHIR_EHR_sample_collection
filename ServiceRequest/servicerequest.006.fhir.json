@@ -1,0 +1,96 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "servicerequest.006",
+    "status": "active",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/servicerequest-category",
+                    "code": "387713003",
+                    "display": "Surgical procedure"
+                }
+            ],
+            "text": "Procedimiento quirúrgico"
+        }
+    ],
+    "priority": "stat",
+    "code": {
+        "concept": {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "394610002",
+                    "display": "Neurosurgery"
+                }
+            ]
+        },
+        "reference": {
+            "reference": "Procedure/procedure.006"
+        }
+    },
+    "subject": {
+        "reference": "Patient/patient.005"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.008"
+    },
+    "requester": {
+        "reference": "Practitioner/practitioner.006"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "45544007",
+                "display": "Neurosurgeon"
+            }
+        ],
+        "text": "Neurocirujano"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.006"
+        }
+    ],
+    "location": [
+        {
+            "reference": {
+                "reference": "Location/location.001"
+            }
+        }
+    ],
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "82271004",
+                        "display": "Head injury"
+                    }
+                ]
+            },
+            "reference": {
+                "reference": "Condition/condition.003"
+            }
+        }
+    ],
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "69536005",
+                    "display": "Head"
+                }
+            ]
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente presenta traumatismo craneal con lesiones internas y requeriere neurocirugía urgente."
+        }
+    ]
+}

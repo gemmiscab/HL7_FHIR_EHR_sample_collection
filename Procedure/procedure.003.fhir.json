@@ -1,0 +1,92 @@
+{
+    "resourceType": "Procedure",
+    "id": "procedure.003",
+    "basedOn": [
+        {
+            "reference": "ServiceRequest/servicerequest.002"
+        }
+    ],
+    "partOf": [
+        {
+            "reference": "Encounter/encounter.004"
+        }
+    ],
+    "status": "completed",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "103693007",
+                    "display": "Diagnostic procedure"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "363680008",
+                "display": "X-ray"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.002"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.004"
+    },
+    "performer": [
+        {
+            "function": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/performer-role",
+                        "code": "41904004",
+                        "display": "Medical X-ray technician"
+                    }
+                ]
+            },
+            "actor": {
+                "reference": "Practitioner/practitioner.010"
+            }
+        }
+    ],
+    "location": {
+        "reference": "Location/location.001"
+    },
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "125605004",
+                        "display": "Broken bone"
+                    }
+                ]
+            },
+            "reference": {
+                "reference": "Observation/observation.003"
+            }
+
+        }
+    ],
+    "outcome": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "10828004",
+                "display": "Positive (qualifier value)"
+            }
+        ],
+        "text": "Se repitió la radiografía y se confirmó la fractura."
+    },
+    "supportingInfo": [
+        {
+            "reference": "Observation/observation.003"
+        }
+    ]
+}

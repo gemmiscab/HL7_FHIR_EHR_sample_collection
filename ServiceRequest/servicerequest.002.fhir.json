@@ -1,0 +1,105 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "servicerequest.002",
+    "status": "completed",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/servicerequest-category",
+                    "code": "363679005",
+                    "display": "Imaging"
+                }
+            ]
+        }
+    ],
+    "priority": "routine",
+    "orderDetail": [
+        {
+            "parameter": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "24689-2",
+                                "display": "XR Upper extremity Views"
+                            }
+                        ]
+                    },
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "10828004",
+                                "display": "Positive"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/patient.002"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.003"
+    },
+    "requester": {
+        "reference": "Practitioner/practitioner.003"
+    },
+    "performerType": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "41904004",
+                "display": "Medical X-ray technician"
+            }
+        ],
+        "text": "Técnico en radiología"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.010"
+        }
+    ],
+    "location": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "309964003",
+                        "display": "Radiology department"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "Location/location.001"
+            }
+        }
+    ],
+    "reason": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "125605004",
+                        "display": "Broken bone"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "Observation/observation.003"
+            } 
+        }
+    ],
+    "note": [
+        {
+            "text": "El paciente tiene el brazo roto."
+        }
+    ]
+}

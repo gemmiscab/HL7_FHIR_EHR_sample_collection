@@ -1,0 +1,119 @@
+{
+    "resourceType": "Appointment",
+    "id": "appointment.008",
+    "status": "fulfilled",
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                    "code": "31",
+                    "display": "Specialist Surgical"
+                }
+            ],
+            "text": "Cirugía especializada"
+        }
+    ],
+    "serviceType": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                        "code": "216",
+                        "display": "Neurosurgery"
+                    }
+                ],
+                "text": "Neurocirugía"
+            },
+            "reference": {
+                "reference": "Healthcare Service/healthcareservice.004"
+            }
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "394610002",
+                    "display": "Surgery-Neurosurgery"
+                }
+            ],
+            "text": "Cirugía-Neurocirugía"
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "EMERGENCY",
+                "display": "Emergency appointment"
+            }
+        ],
+        "text": "Cita de urgencias"
+    },
+    "reason": [
+        {
+            "concept":{
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "82271004",
+                        "display": "Head injury"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "Condition/condition.003"
+            }
+        }
+    ],
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "code": "S",
+                "display": "stat"
+            }
+        ],
+        "text": "Prioridad alta"
+    },
+    "description": "Paciente con traumatismo craneal que presenta lesiones internas y requiere cirugía urgente.",
+    "start": "2022-08-01T11:00:00Z",
+    "end": "2022-08-01T11:30:00Z",
+    "minutesDuration": 30,
+    "subject": {
+        "reference": "Patient/patient.005"
+    },
+    "participant": [
+        {
+            "actor": {
+                "reference": "Patient/patient.005"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Practitioner/practitioner.006"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Location/location.001"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "HealthcareService/healthcareservice.004"
+            },
+            "required": true,
+            "status": "accepted"
+        }
+    ]   
+}

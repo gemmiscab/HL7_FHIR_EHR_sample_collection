@@ -1,0 +1,90 @@
+{
+    "resourceType": "Patient",
+    "id": "patient.007",
+    "active": true,
+    "name":[
+        {
+            "use": "official",
+            "text": "Ramón Gómez Portillo",
+            "given": ["Ramón"],
+            "family": "Gómez Portillo"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+34 954 123 456"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1999-03-05",
+    "deceasedBoolean": false,
+    "address":[
+        {
+            "use": "home",
+            "line": ["Calle de la Esperanza", "7"],
+            "city": "Sevilla",
+            "country": "España",
+            "postalCode": "41002"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+            }
+        ],
+        "text": "Soltero/a"
+    },
+    "contact":[
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+                            "code": "N",
+                            "display": "Next-of-Kin"
+                        }
+                    ],
+                    "text": "Madre"
+                }
+            ],
+            "name": {
+                "use": "official",
+                "text": "María Portillo"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "+34 954 123 456"
+                }
+            ]
+        }
+    ],
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/language",
+                        "code": "es",
+                        "display": "Español"
+                    }
+                ]
+            }
+        }
+    ],
+    "generalPractitioner": [
+        {
+            "reference": "Practitioner/practioner.001",
+            "display": "Carolina Fernández García"
+        }
+    ],
+    "managingOrganization": {
+        "reference": "Organization/organization.001",
+        "display": "Hospital Universitario Virgen del Rosario"
+    }
+}

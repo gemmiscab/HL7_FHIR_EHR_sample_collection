@@ -1,0 +1,87 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "allergyintolerance.001",
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+                "code": "presumed",
+                "display": "Presumed"
+            }
+        ]
+    },
+    "type": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+                "code": "allergy",
+                "display": "Allergy"
+            }
+        ]
+    },
+    "category": ["environment"],
+    "criticality": "high",
+    "code":{
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "424213003",
+                "display": "Allergy to bee venom"
+            }
+        ]
+    },
+    "patient": {
+        "reference": "Patient/pat001"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.001"
+    },
+    "note": [
+        {
+            "text": "El paciente es alérgico a las picaduras de abeja."
+        }
+    ],
+    "reaction": [
+        {
+            "manifestation": [
+                {
+                    "concept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "422400008",
+                                "display": "Hives"
+                            }
+                        ]
+                    },
+                    "reference": {
+                        "reference": "Observation/obs001"
+                    }
+                }
+            ],
+            "severity": "severe",
+            "exposureRoute": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "27658006",
+                        "display": "Sting - arthropod"
+                    }
+                ]
+            },
+            "note": [
+                {
+                    "text": "El paciente presenta ronchas en la piel."
+                }]
+        }
+    ]
+}

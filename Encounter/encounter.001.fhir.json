@@ -1,0 +1,58 @@
+{
+    "resourceType": "Encounter",
+    "id": "encounter.001",
+    "status": "completed",
+    "class": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/pat001"
+    },
+    "serviceProvider": {
+        "reference": "Organization/org003"
+    },
+    "appointment": [
+        {
+            "reference": "Appointment/app001"
+        }
+    ],
+    "reason": [
+        {
+            "use": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/encounter-reason-use",
+                            "code": "HC",
+                            "display": "health concern"
+                        }
+                    ]
+                }
+            ],
+            "value": [
+                {
+                    "concept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "431855005",
+                                "display": "Encounter for symptom"
+                            }
+                        ]
+                    },
+                    "reference": {
+                        "reference": "Condition/cond001"
+                    }
+                }
+            ]
+        }
+    ]
+}

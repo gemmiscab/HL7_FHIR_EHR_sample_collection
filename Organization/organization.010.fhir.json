@@ -1,0 +1,46 @@
+{
+    "resourceType": "Organization",
+    "id": "organization.010",
+    "active": true,
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/organization-type",
+                    "code": "govt",
+                    "display": "Government"
+                }
+            ]
+        }
+    ],
+    "name": "Consejería de Salud y Familias de la Junta de Andalucía",
+    "alias": ["Consejería de Salud y Familias", "Consejería de Salud"],
+    "description": "La Consejería de Salud y Familias de la Junta de Andalucía es el órgano de la Junta de Andalucía encargado de las competencias en materia de salud y familia en la comunidad autónoma de Andalucía.",
+    "contact": [
+        {
+            "name": [
+                {
+                    "text": "Consejería de Salud y Familias - Atención al Usuario"
+                }
+            ],
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "955 54 50 60",
+                    "use": "work"
+                }
+            ],
+            "address": {
+                "text": "Av. de Hytasa, 14, 41006 Sevilla",
+                "line": ["Av. de Hytasa, 14"],
+                "city": "Sevilla",
+                "state": "Andalucía",
+                "postalCode": "41006",
+                "country": "España"
+            }
+        }
+    ],
+    "partOf": {
+        "reference": "Organization/org-sspa"
+    }
+}

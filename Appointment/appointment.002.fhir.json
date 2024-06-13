@@ -1,0 +1,119 @@
+{
+    "resourceType": "Appointment",
+    "id": "appointment.002",
+    "status": "fulfilled",
+    "serviceCategory": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/service-category",
+                    "code": "17",
+                    "display": "General Practice"
+                }
+            ]
+        }
+    ],
+    "serviceType": [
+        {
+            "concept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/service-type",
+                        "code": "124",
+                        "display": "General Practice"
+                    }
+                ]
+            },
+            "reference": {
+                "reference": "healthcareservice.001"
+            }
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+                    "code": "394802001",
+                    "display": "General medicine"
+                }
+            ]
+        }
+    ],
+    "appointmentType": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+                "code": "FOLLOWUP",
+                "display": "A follow up visit from a previous appointment"
+            }
+        ],
+        "text": "Cita de seguimiento"
+    },
+    "reason": [
+        {
+            "concept":{
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "160268005",
+                        "display": "No FH: Allergy"
+                    }
+                ]
+            },
+            "reference":{
+                "reference": "AllergyIntolerance/allergyintolerance.001"
+            }
+        }
+    ],
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+                "code": "EL",
+                "display": "elective"
+            }
+        ],
+        "text": "Cita para revisión de resultados de alergias"
+    },
+    "description": "Cita para revisión de alergias",
+    "previousAppointment": {
+        "reference": "appointment.001"
+    },
+    "start": "2021-07-01T10:00:00Z",
+    "end": "2021-07-01T10:30:00Z",
+    "minutesDuration": 30,
+    "subject": {
+        "reference": "Patient/pat001"
+    },
+    "participant": [
+        {
+            "actor": {
+                "reference": "Patient/pat001"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Practitioner/prac001"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "Location/loc001"
+            },
+            "required": true,
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "reference": "HealthcareService/healthcareservice.001"
+            },
+            "required": true,
+            "status": "accepted"
+        }
+    ]   
+}
