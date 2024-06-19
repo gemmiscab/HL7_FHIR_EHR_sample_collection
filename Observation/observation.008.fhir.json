@@ -1,5 +1,64 @@
 {
     "resourceType": "Observation",
     "id": "observation.008",
-    "status": "final"
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "imagining",
+                    "display": "Imaging"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "34798-9",
+                "display": "Neurological surgery Consult note"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/patient.005"
+    },
+    "encounter": {
+        "reference": "Encounter/encounter.008"
+    },
+    "performer": [
+        {
+            "reference": "Practitioner/practitioner.006"
+        }
+    ],
+    "valueString": "Se observan lesiones intracraneales en la resonancia magnética. Es necesario realizar neurocirugía.",
+    "note": [
+        {
+            "authorReference": {
+                "reference": "Practitioner/practitioner.006"
+            },
+            "time": "2021-05-12T10:00:00Z",
+            "text": "Se observan lesiones intracraneales en la resonancia magnética. Es necesario realizar neurocirugía."
+        }
+    ],
+    "bodySite": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "7851002",
+                "display": "Intracranial subdural space"
+            }
+        ]
+    },
+    "method": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "312250003",
+                "display": "Magnetic resonance imaging"
+            }
+        ]
+    }
 }
