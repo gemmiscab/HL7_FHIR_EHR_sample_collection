@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-      },
-    "endpoint": [
-      {
-        "reference": "Endpoint/ep006",
-        "display" : "Unidad de Dermatología del Hospital Virgen del Rosario"
-      }
-    ]
+    }
   }  

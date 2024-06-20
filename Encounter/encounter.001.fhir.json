@@ -14,14 +14,14 @@
         }
     ],
     "subject": {
-        "reference": "Patient/pat001"
+        "reference": "Patient/patient.001"
     },
     "serviceProvider": {
-        "reference": "Organization/org003"
+        "reference": "Organization/organization.003"
     },
     "appointment": [
         {
-            "reference": "Appointment/app001"
+            "reference": "Appointment/appointment.001"
         }
     ],
     "reason": [
@@ -49,7 +49,7 @@
                         ]
                     },
                     "reference": {
-                        "reference": "Condition/cond001"
+                        "reference": "Condition/condition.001"
                     }
                 }
             ]

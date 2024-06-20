@@ -65,12 +65,6 @@
         "longitude": -5.784,
         "latitude": 37.186
     },
-    "managingOrganization": {
-        "reference": "Organization/org-sspa"
-    },
-    "partOf": {
-        "reference": "Organization/org-sspa"
-    },
     "hoursOfOperation": [
         {
             "availableTime": [
@@ -81,11 +75,6 @@
                     "availableEndTime": "21:00:00"
                 }
             ]
-        }
-    ],
-    "endpoint": [
-        {
-            "reference": "Endpoint/ep-csutreranorte-citaprevia"
         }
     ]
 }

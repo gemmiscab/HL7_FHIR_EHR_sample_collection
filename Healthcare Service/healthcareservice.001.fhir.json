@@ -3,7 +3,7 @@
     "id": "healthcareservice.001",
     "active": true,
     "providedBy": {
-        "reference": "Organization/org001"
+        "reference": "Organization/organization.001"
     },
     "category": [
         {

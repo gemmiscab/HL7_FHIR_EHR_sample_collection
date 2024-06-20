@@ -43,14 +43,6 @@
               "country": "España"
           }
       }
-  ],
-  "partOf": {
-      "reference": "Organization/org-sspa"
-    },
-  "endpoint": [
-    {
-      "reference": "Endpoint/ep-huvr-citaprevia"
-    }
   ]
 }
     

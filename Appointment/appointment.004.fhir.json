@@ -25,7 +25,7 @@
                 ]
             },
             "reference": {
-                "reference": "healthcareservice.001"
+                "reference": "Healthcare Service/healthcareservice.001"
             }
         }
     ],
@@ -84,19 +84,19 @@
     "end": "2021-07-01T11:30:00Z",
     "minutesDuration": 30,
     "subject": {
-        "reference": "Patient/pat002"
+        "reference": "Patient/patient.002"
     },
     "participant": [
         {
             "actor": {
-                "reference": "Patient/pat002"
+                "reference": "Patient/patient.002"
             },
             "required": true,
             "status": "accepted"
         },
         {
             "actor": {
-                "reference": "Practitioner/prac003"
+                "reference": "Practitioner/practitioner.003"
             },
             "required": true,
             "status": "accepted"

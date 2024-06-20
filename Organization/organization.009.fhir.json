@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-      },
-    "endpoint": [
-      {
-        "reference": "Endpoint/ep009",
-        "display" : "Unidad de Neonatología del Hospital Virgen del Rosario"
-      }
-    ]
+    }
   }  

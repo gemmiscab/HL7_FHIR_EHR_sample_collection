@@ -61,11 +61,8 @@
         "longitude": -5.982930
     },
     "managingOrganization": {
-        "reference": "Organization/org002",
+        "reference": "Organization/organization.002",
         "display": "Hospital Universitario Virgen María"
-    },
-    "partOf": {
-        "reference": "Organization/org-sspa"
     },
     "hoursOfOperation": [
         { 
@@ -76,10 +73,5 @@
           }
         ]
       }
-    ],
-    "endpoint": [
-        {
-            "reference": "Endpoint/ep-huvm-citaprevia"
-        }
     ]
 }

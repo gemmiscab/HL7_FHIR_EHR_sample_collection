@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-        },
-    "endpoint": [
-        {
-        "reference": "Endpoint/ep004",
-        "display" : "Unidad de Oftalmología del Hospital Virgen del Rosario"
-        }
-    ]
+    }
 }  

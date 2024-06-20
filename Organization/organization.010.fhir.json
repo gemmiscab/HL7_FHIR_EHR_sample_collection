@@ -39,8 +39,5 @@
                 "country": "España"
             }
         }
-    ],
-    "partOf": {
-        "reference": "Organization/org-sspa"
-    }
+    ]
 }

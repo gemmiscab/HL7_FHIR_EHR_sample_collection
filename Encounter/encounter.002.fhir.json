@@ -14,10 +14,10 @@
         }
     ],
     "subject": {
-        "reference": "Patient/pat001"
+        "reference": "Patient/patient.001"
     },
     "serviceProvider": {
-        "reference": "Organization/org003"
+        "reference": "Organization/organization.003"
     },
     "appointment": [
         {
@@ -69,7 +69,7 @@
                         ]
                     },
                     "reference": {
-                        "reference": "Condition/cond001"
+                        "reference": "Condition/condition.001"
                     }
                 }
             ]
@@ -78,7 +78,7 @@
     "location": [
         {
             "location": {
-                "reference": "Location/loc001"
+                "reference": "Location/location.001"
             }
         }
     ]

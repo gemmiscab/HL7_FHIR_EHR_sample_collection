@@ -25,7 +25,7 @@
                 ]
             },
             "reference": {
-                "reference": "healthcareservice.001"
+                "reference": "Healthcare Service/healthcareservice.001"
             }
         }
     ],
@@ -81,26 +81,26 @@
     "end": "2021-06-01T10:30:00Z",
     "minutesDuration": 30,
     "subject": {
-        "reference": "Patient/pat001"
+        "reference": "Patient/patient.001"
     },
     "participant": [
         {
             "actor": {
-                "reference": "Patient/pat001"
+                "reference": "Patient/patient.001"
             },
             "required": true,
             "status": "accepted"
         },
         {
             "actor": {
-                "reference": "Practitioner/prac001"
+                "reference": "Practitioner/practitioner.001"
             },
             "required": true,
             "status": "accepted"
         },
         {
             "actor": {
-                "reference": "Location/loc001"
+                "reference": "Location/location.001"
             },
             "required": true,
             "status": "accepted"

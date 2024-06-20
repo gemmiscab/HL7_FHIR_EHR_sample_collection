@@ -49,10 +49,10 @@
         ]
     },
     "subject": {
-        "reference": "Patient/pat001"
+        "reference": "Patient/patient.001"
     },
     "encounter": {
-        "reference": "Encounter/enc001"
+        "reference": "Encounter/encounter.001"
     },
     "note": [
         {

@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-      },
-    "endpoint": [
-      {
-        "reference": "Endpoint/ep007",
-        "display" : "Unidad de Hematología del Hospital Virgen del Rosario"
-      }
-    ]
+    }
   }  

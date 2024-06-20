@@ -71,12 +71,9 @@
       "latitude": 37.389
     },
     "managingOrganization" : { 
-      "reference" : "Organization/org001",
+      "reference" : "Organization/organization.001",
       "display" : "Hospital Universitario Virgen del Rosario"
      },
-    "partOf": {
-      "reference": "Organization/org-sspa"
-    },
     "hoursOfOperation" : [
       { 
         "availableTime" : [
@@ -85,12 +82,6 @@
             "allDay" : true
           }
         ]
-      }
-    ],
-    "endpoint" : [
-      { 
-        "reference" : "Endpoint/ep003",
-        "display" : "Hospital General Virgen del Rosario - Servicio de Urgencias"
       }
     ]
   }

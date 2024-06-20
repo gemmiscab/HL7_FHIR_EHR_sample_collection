@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-      },
-    "endpoint": [
-      {
-        "reference": "Endpoint/ep008",
-        "display" : "Unidad de Medicina Interna del Hospital Virgen del Rosario"
-      }
-    ]
+    }
   }  

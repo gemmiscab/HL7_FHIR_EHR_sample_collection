@@ -45,12 +45,6 @@
         }
     ],
     "partOf": {
-        "reference": "Organization/org001"
-      },
-    "endpoint": [
-      {
-        "reference": "Endpoint/ep003",
-        "display" : "Unidad de Alergología del Hospital Virgen del Rosario"
-      }
-    ]
+        "reference": "Organization/organization.001"
+    }
   }  

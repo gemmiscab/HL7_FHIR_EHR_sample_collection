@@ -46,14 +46,5 @@
           "country": "ES"
         }
     }
-  ],
-  "partOf": {
-    "reference": "Organization/org-sspa"
-  },
-  "endpoint": [
-    {
-      "reference": "Endpoint/ep-huvm-citaprevia"
-    }
   ]
 }
-  

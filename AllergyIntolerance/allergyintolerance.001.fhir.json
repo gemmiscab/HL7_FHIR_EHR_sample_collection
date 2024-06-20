@@ -40,7 +40,7 @@
         ]
     },
     "patient": {
-        "reference": "Patient/pat001"
+        "reference": "Patient/patient.001"
     },
     "encounter": {
         "reference": "Encounter/encounter.001"
@@ -64,7 +64,7 @@
                         ]
                     },
                     "reference": {
-                        "reference": "Observation/obs001"
+                        "reference": "Observation/observation.001"
                     }
                 }
             ],

@@ -46,11 +46,5 @@
     ],
     "partOf": {
         "reference": "Organization/organization.001"
-    },
-    "endpoint": [
-        {
-            "reference": "Endpoint/ep011",
-            "display": "Unidad de Pediatría del Hospital Virgen del Rosario"
-        }
-    ]
+    }
 }
